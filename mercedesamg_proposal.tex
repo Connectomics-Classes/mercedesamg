@@ -1,0 +1,90 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{cite}
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+
+
+\title{Mapping the Brain: An Introduction to Connectomics\\An Analysis of the Performance of Vesicle Detection Systems}
+\author{Greg Levine, Matt Saltzman, Alex Sharata}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Increases in processing power as well as the development of high speed electron microscopy have led to the acquisition of multiple terabytes of high resolution three dimensional photography of whole brains. There already exists MATLAB code to identify vesicles within the neural EM data to some degree of accuracy. We will begin our study by assessing the accuracy of the already existing vesicle detection software. Afterwards we hope to improve upon this via fundamental changes in the MATLAB algorithm and we will then use our developed performance analysis system to compare the new algorithm to the original. Our hope is that we can develop a more reliable method of identifying vesicles, and that this will in turn lead to better identification of synapses.
+
+\section{Project Outline}
+\begin{itemize}
+\item Major Items
+\begin{enumerate}
+\item Establish existing MATLAB library codebase (1/8/16) - Greg
+\item Analyze accuracy and recall of already existing code (1/15/16) - Matt, Alex
+\item Improve upon MATLAB via fundamental method changes (1/18/16) - Alex, Greg, Matt
+\item Analyze the accuracy of our modifications (1/20/16) - Matt, Alex
+\item Compare the performance of our modified detection system to the previous solution - Matt, Alex
+\end{enumerate}
+
+\item Minor Items
+\begin{enumerate}
+\item Writing our initial project proposal
+\item Collating our results
+\item Making a one-page summary of our results
+\item Making SOCARF poster presenting findings
+\end{enumerate}
+
+\end{itemize}
+
+
+\section{References}
+\begin{itemize}
+\item William Gray Roncal, Michael Pekala, Verena Kaynig-Fittkau, Dean M Kleissas, Joshua T Vogelstein, Hanspeter Pfister, Randal Burns, R Jacob Vogelstein, Mark A Chevillet and Gregory D Hager. VESICLE: Volumetric Evaluation of Synaptic Interfaces using Computer Vision at Large Scale. In Xianghua Xie, Mark W. Jones, and Gary K. L. Tam, editors, Proceedings of the British Machine Vision Conference (BMVC), pages 81.1-81.13. BMVA Press, September 2015.
+\end{itemize}
+
+
+\end{document}
